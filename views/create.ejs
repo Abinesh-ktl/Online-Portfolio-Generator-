@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <base href="/" /> <!-- for local host -->
+  <title>LEO</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">LEO</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main id="main">
+
+    
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <form action="/compose" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            
+            <h5 style="margin: 2% 0%;color:#34b7a7;">About</h5>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Photo</label>
+              <input id = "exampleInputEmail1" type="file" name="file"/>
+            </div>
+            
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input required name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input required name="user_description" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">About you</label>
+            <input required name="user_about"  class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Role</label>
+            <input required name="user_role"  class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Role Details</label>
+            <input required name="user_roleDetails"  class="form-control" id="exampleInputPassword1">
+          </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Details</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Age</label>
+                <input required name="user_age"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Date of Birth</label>
+                <input required name="user_dob"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Website</label>
+                <input required name="user_website"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Degree</label>
+                <input required name="user_degree"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Phone</label>
+                <input required name="user_phone"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input required name="user_email" type="email" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">City</label>
+                <input required name="user_city"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Freelance (Available / Not Available)</label>
+                <input required name="user_freelance"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <h5 style="margin: 2% 0%;color:#34b7a7;">Skills</h5>
+            <label for="exampleInputPassword1" class="form-label">About your skills</label>
+            <input required  name="user_skills_breif"  class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Enter your skills in this format (skill_percent)</label>
+            <input required name="user_skills_tech"  class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Project description</label>
+            <input required name="user_project_description"  class="form-control" id="exampleInputPassword1">
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Projects</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Clients</label>
+                <input required name="user_clients"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Projects</label>
+                <input required name="user_projects"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Hours spent</label>
+                <input required name="user_hours"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Team members count</label>
+                <input required name="user_team"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">High School</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Residential Address</label>
+                <input required name="user_address"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">High School</label>
+                <input required name="user_school"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Year</label>
+                <input required name="user_school_year"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">About School</label>
+                <input required name="user_school_about"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">College</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">College</label>
+                <input required name="user_college"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Year</label>
+                <input required name="user_college_year"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">About College</label>
+                <input required name="user_college_about"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Degree pursued</label>
+                <input required name="user_college_degree"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Professional Experience</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Field</label>
+                <input required name="user_field"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Year</label>
+                <input required name="user_field_year"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Adress</label>
+                <input required name="user_field_address"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Description</label>
+                <input required name="user_field_description"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Social media</h5>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Twitter</label>
+                <input required name="user_twitter"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Facebook</label>
+                <input  requiredname="user_facebook"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">Instagram</label>
+                <input required name="user_instagram"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-3">
+                <label for="exampleInputPassword1" class="form-label">LinkedIn</label>
+                <input required name="user_linkedin"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Area of Interest</h5>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Field</label>
+                <input required name="user_aoi"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Year</label>
+                <input  requiredname="user_aoi_year"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Description</label>
+                <input required name="user_aoi_description"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            
+            <div class="row">
+              <h5 style="margin: 2% 0%;color:#34b7a7;">Contact</h5>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Location</label>
+                <input required name="user_location"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input  type="email" requiredname="user_contact_email"  class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Phone</label>
+                <input required name="user_contact"  class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+            
+          </div>
+          <button  id="generate" type="submit" class="btn btn-primary">Generate</button>
+        </form> 
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <%- include("partials/footer") -%>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
